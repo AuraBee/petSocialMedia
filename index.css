@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background:hsl(209, 97%, 86%);
+    text-align: center; 
+    font-size: 2.1rem;
+    color: hsl(209, 97%, 26%);
+    padding: 10rem;
+}
+
+.container {
+    padding: 2em;   
+    width: 100%;
+}
+
+img {
+    width: 100rem;
+    height: 400px;
+   
+}
+
+h1 {
+    margin: 0;
+    font-size: 10rem;
+}
+
+h1 > span {
+    color: hsl(329, 100%, 49%);
+}
+
+header > p {
+    font-weight: bold;
+    color:  hsl(209, 97%, 26%);
+    
+}
+header > span {
+    font-size:10rem;
+}
+.subtitle {
+    margin-top: 0;
+    font-size: 1.5em;
+ }
+
+.cat-basket {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cat-img {
+    width: 30rem;
+    max-height: 66rem;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    background: hsl(329, 80%, 79%);
+    color: white;
+    cursor: pointer;
+}
+
+.cat-img:hover {
+    background: hsl(209, 97%, 46%);;
+}
+/*/* /* /* /* /* /* /*  
+.profile,
+.pic {
+    border-radius: 10px;
+}
+
+.profile {
+    height: 260px;
+    padding: 1em;
+    background-color: #ff6700;
+    color: white;
+    cursor: pointer;
+}
+
+.pic {
+    max-height: 200px;
+    margin: 0 auto;
+} */
