@@ -1,10 +1,10 @@
 const cats = [
     {
-        name: 'Pumpkin',
-        thumbnail: 'imgs/Pumpkin.jpeg'
+        name: 'Button Nose',
+        thumbnail: 'imgs/buttonNose.jpg'
     },
      {
-        name: 'Snuggles',
+        name: 'Snuggly Wuggly',
         thumbnail: 'imgs/Snuggles.png'
         // credit: 'https://unsplash.com/photos/OzAeZPNsLXk'
     },
@@ -38,11 +38,34 @@ const cats = [
 const catBasket = document.getElementById("cat-basket")
 
 
-function renderCats(){
-    let imgsDOM = ""
-    for (let i = 0; i < cats.length; i++) {
-      catBasket.innerHTML += ` <img class="cat-img" src="${cats[i].thumbnail}">`
-    }
-}
+cats.forEach(image => {
+    const card = document.createElement('div')
+    card.classList.add('card');
+    catBasket.appendChild(card)
 
-renderCats()
+    const picture = document.createElement('img')
+    picture.classList.add('picture');
+    picture.src = image.thumbnail
+    card.appendChild(picture)
+
+    const imageName = document.createElement('h2')
+    imageName.classList.add('image-name');
+    imageName.innerText = image.name
+    card.appendChild(imageName)
+})
+
+// 
+/*          refactored into forEach (above)
+//function renderCats(){
+//     let imgsDOM = ""
+//       let catImg = document.getElementsByClassName("cat-img")
+//     for (let i = 0; i < cats.length; i++) {
+//     catBasket.innerHTML += ` <img class="cat-img" src="${cats[i].thumbnail}">  `
+  
+//     let catImg = document.getElementsByClassName("cat-img")
+//     catImg.innerHTML += cats[i].name
+//     }
+  
+// }
+
+// renderCats()*/
